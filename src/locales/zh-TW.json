@@ -1,0 +1,17 @@
+{
+  "home.title": "首頁",
+  "login.title": "登錄頁",
+  "mine.title": "個人中心頁",
+	"argument.title": "請閲讀協議内容",
+	"argument.ok": "已閲讀並同意協議",
+	"argument.msg": "請閲讀協議内容並勾選",
+	"login.register.username.msg": "用戶名不能爲空!",
+	"login.register.username.phr": "用戶名",
+	"login.register.password.msg": "密碼不能爲空!",
+	"login.register.password.phr": "密碼",
+	"login.register.agreement.left": "已閲讀並同意",
+	"login.register.agreement.right": "《隱私協議》",
+	"login.register.login.in": "登錄",
+	"login.register.extra.forget": "忘記密碼",
+	"login.register.extra.register": "沒有賬號?請注冊"
+}

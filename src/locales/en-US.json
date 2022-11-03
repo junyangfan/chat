@@ -1,0 +1,17 @@
+{
+  "home.title": "Home",
+	"login.title": "Login",
+	"mine.title": "Mine",
+	"argument.title": "Please read the agreement",
+	"argument.ok": "The agreement has been read and agreed",
+	"argument.msg": "Please read the agreement and check",
+	"login.register.username.msg": "Please input your Username!",
+	"login.register.username.phr": "Username",
+	"login.register.password.msg": "Please input your Password!",
+	"login.register.password.phr": "Password",
+	"login.register.agreement.left": "Read and agreed ",
+	"login.register.agreement.right": "《privacy agreement》",
+	"login.register.login.in": "Log in",
+	"login.register.extra.forget": "Forgot password",
+	"login.register.extra.register": "No account? Please register"
+}

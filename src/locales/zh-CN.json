@@ -1,0 +1,17 @@
+{
+  "home.title": "首页",
+  "login.title": "登录页",
+  "mine.title": "个人中心页",
+	"argument.title": "请阅读协议内容",
+	"argument.ok": "已阅读并同意协议",
+	"argument.msg": "请阅读协议内容并勾选",
+	"login.register.username.msg": "用户名不能为空!",
+	"login.register.username.phr": "用户名",
+	"login.register.password.msg": "密码不能为空!",
+	"login.register.password.phr": "密码",
+	"login.register.agreement.left": "已阅读并同意",
+	"login.register.agreement.right": "《隐私协议》",
+	"login.register.login.in": "登录",
+	"login.register.extra.forget": "忘记密码",
+	"login.register.extra.register": "没有账号?请注册"
+}
