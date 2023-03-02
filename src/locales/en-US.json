@@ -13,5 +13,6 @@
 	"login.register.agreement.right": "《privacy agreement》",
 	"login.register.login.in": "Log in",
 	"login.register.extra.forget": "Forgot password",
-	"login.register.extra.register": "No account? Please register"
+	"login.register.extra.register": "No account? Please register",
+	"request.error.all.msg": "Unknown abnormal, please contact your administrator！"
 }

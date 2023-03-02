@@ -4,3 +4,4 @@
 **/vite.config.js
 **/postcss.config.js
 **/vite.config.ts
+*.json

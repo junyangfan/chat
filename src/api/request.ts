@@ -92,8 +92,6 @@ axiosService.interceptors.response.use(
 	}
 )
 
-export default axiosService
-
 // 获取请求key
 const getReqKey = (config: AxiosRequestConfig) => {
 	// 请求方式、请求地址、请求参数生成的字符串来作为是否重复请求的依据
@@ -144,13 +142,14 @@ const rspIntercept = (config: AxiosRequestConfig) => {
 
 // 错误处理
 const errorHandler = (error: any) => {
-	const isCusMsg = error.code && errorMessage.findIndex((i) => i.code === error.code) !== -1
-	if (isCusMsg) {
-		const msg = errorMessage.find((i) => i.code === error.code)?.msg
-		message.error(`错误码：${error.code}，${msg}`)
-		return Promise.reject(error)
-	}
-	message.error('未知异常，请联系管理员！')
+	// const isCusMsg = error.code && errorMessage.findIndex((i) => i.code === error.code) !== -1
+	// if (isCusMsg) {
+	// 	const msg = errorMessage.find((i) => i.code === error.code)?.msg
+	// 	message.error(`${error.code}，${msg}`)
+	// 	return Promise.reject(error)
+	// }
+	// message.error(i18n.global.t('request.error.all.msg'))
+	message.error((i18n as any).t('request.error.all.msg'))
 	return Promise.reject(error)
 }
 
@@ -159,17 +158,19 @@ export enum AxiosCancelReq {
 	AFTER = 'after',
 }
 
-const errorMessage = [
-	{ code: 400, msg: '错误请求' },
-	{ code: 401, msg: '未授权，请刷新系统重新登录' },
-	{ code: 403, msg: '拒绝访问' },
-	{ code: 404, msg: '请求地址出错' },
-	{ code: 405, msg: '请求方法未允许' },
-	{ code: 408, msg: '请求超时' },
-	{ code: 500, msg: '服务器内部错误' },
-	{ code: 501, msg: '服务未实现' },
-	{ code: 502, msg: '网关错误' },
-	{ code: 503, msg: '服务不可用' },
-	{ code: 504, msg: '网关超时' },
-	{ code: 505, msg: 'HTTP版本不受支持' },
-]
+// const errorMessage = [
+// 	{ code: 400, msg: '错误请求' },
+// 	{ code: 401, msg: '未授权，请刷新系统重新登录' },
+// 	{ code: 403, msg: '拒绝访问' },
+// 	{ code: 404, msg: '请求地址出错' },
+// 	{ code: 405, msg: '请求方法未允许' },
+// 	{ code: 408, msg: '请求超时' },
+// 	{ code: 500, msg: '服务器内部错误' },
+// 	{ code: 501, msg: '服务未实现' },
+// 	{ code: 502, msg: '网关错误' },
+// 	{ code: 503, msg: '服务不可用' },
+// 	{ code: 504, msg: '网关超时' },
+// 	{ code: 505, msg: 'HTTP版本不受支持' },
+// ]
+
+export default axiosService

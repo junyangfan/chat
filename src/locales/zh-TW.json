@@ -13,5 +13,6 @@
 	"login.register.agreement.right": "《隱私協議》",
 	"login.register.login.in": "登錄",
 	"login.register.extra.forget": "忘記密碼",
-	"login.register.extra.register": "沒有賬號?請注冊"
+	"login.register.extra.register": "沒有賬號?請注冊",
+	"request.error.all.msg": "未知異常，請聯係管理員！"
 }

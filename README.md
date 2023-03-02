@@ -1,10 +1,42 @@
-# Tauri + React + Typescript
+# 使用 Tauri + React + Typescript 开发的桌面端应用
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+使用到的技术：
+* vite  
+* tauri  
+* react18.X
+* typescript
+* i18n
+* antd-design
+* iconfont（图标管理）
+* lottie-web（动画处理）
+* axios（封装请求）
+* axios-retry（请求重试）
+* vite-plugin-theme-preprocessor（主题切换）
+* redux-toolkit（状态保存）
+* cz（commit 规范）
+* eslint & prettier（开发规范）
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+# 项目启动步骤  
 
-路由配置使用：https://github.com/linxianxi/react-router-auth-plus
-多主题使用：https://github.com/GitOfZGT/vite-plugin-theme-preprocessor
+* clone仓库
+```
+git clone https://github.com/junyangfan/chat.git
+```
+
+* 安装依赖
+```
+pnpm install
+```
+
+* 启动
+
+```
+// 桌面应用启动，需要安装rust，详见：https://tauri.app/zh-cn/v1/guides/getting-started/prerequisites
+
+pnpm tauri dev
+
+// 网页端启动
+pnpm dev
+```
+

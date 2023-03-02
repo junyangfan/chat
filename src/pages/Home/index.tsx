@@ -5,10 +5,10 @@ const css = classNames.bind(less)
 import { Button, Input } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { storeReducer } from '@/utils'
+import { storeReducer, toTool } from '@/utils'
 import { useDispatch } from 'react-redux'
 import { resetGlobal } from '@/store/reducer/globalReducer'
-import request from '@/api/request'
+import { Test } from '@/api/Basic/api'
 
 const { Search } = Input
 
@@ -21,8 +21,8 @@ const HomeEle = () => {
 
 	const getReqApi = async () => {
 		try {
-			const res = await request.get('test?delay=1&count=1', {})
-			console.log(res);
+			const [err, data] = await toTool(Test({ delay: 1, count: 1 }))
+			console.log(err, data);
 		}
 		catch (error) {
 			console.log(error);
@@ -39,7 +39,7 @@ const HomeEle = () => {
 					onClick={() => {
 						dispatch(resetGlobal())
 					}}>
-          按钮
+          按钮（重置全局状态，退出操作）
 				</Button>
 			</div>
 			<Button

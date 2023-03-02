@@ -6,10 +6,16 @@ export const routerConfig: IRouteConfig[] = [
 	{
 		path: '/',
 		element: <Home />,
+		meta: {
+			needLogin: true,
+		},
 	},
 	{
 		path: '/entry',
 		element: LazyLoad('Entry'),
+		meta: {
+			needLogin: true,
+		},
 	},
 	{
 		path: '/login',

@@ -14,7 +14,9 @@
     "pre-check": "tsc && npx lint-staged",
     "release": "standard-version",
     "updateIconfont": "sh ./script/iconfont.sh",
-    "updateIcon": "npx @tauri-apps/tauricon"
+    "updateIcon": "npx @tauri-apps/tauricon",
+		"cm": "cz",
+		"ac": "git add . && cz"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",

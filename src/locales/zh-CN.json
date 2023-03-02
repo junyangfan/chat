@@ -1,7 +1,7 @@
 {
-  "home.title": "首页",
-  "login.title": "登录页",
-  "mine.title": "个人中心页",
+	"home.title": "首页",
+	"login.title": "登录页",
+	"mine.title": "个人中心页",
 	"argument.title": "请阅读协议内容",
 	"argument.ok": "已阅读并同意协议",
 	"argument.msg": "请阅读协议内容并勾选",
@@ -13,5 +13,6 @@
 	"login.register.agreement.right": "《隐私协议》",
 	"login.register.login.in": "登录",
 	"login.register.extra.forget": "忘记密码",
-	"login.register.extra.register": "没有账号?请注册"
+	"login.register.extra.register": "没有账号?请注册",
+	"request.error.all.msg": "未知异常，请联系管理员！"
 }

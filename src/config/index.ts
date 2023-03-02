@@ -1,7 +1,7 @@
 
 // axios配置
 export const axiosConfig: AxiosConfig = {
-	baseURL_dev: 'http://49.233.34.220:9675',	// 测试环境地址
+	baseURL_dev: 'http://127.0.0.1:9675',	// 测试环境地址
 	baseURL_prod: '',		// 正式环境地址
 	timeout: 3000,	// 超时时间
 	withCredentials: false, // 是否允许携带cookie

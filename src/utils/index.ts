@@ -4,6 +4,27 @@ import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import { lookupLocalStorage } from '@/i18n'
 
+/**
+ * @param { Promise } 传进去的请求函数
+ * @param { Object= } errorExt - 拓展错误对象
+ * @return { Promise } 返回一个Promise
+ */
+export const toTool = <T>(
+	promise: Promise<T>,
+	errorExt: Record<string, any> = {}
+) => {
+	return promise
+		.then((data: T) => [null, data])
+		.catch((err: any) => {
+			if (Object.keys(errorExt).length) {
+				const parsedError = Object.assign({}, err, errorExt)
+				return [parsedError, undefined]
+			}
+
+			return [err, undefined]
+		})
+}
+
 // 获取指定storeReduce数据
 export const storeReducer = (storeName: string) => useSelector((store: RootState) => store[storeName])
 
